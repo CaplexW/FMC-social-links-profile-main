@@ -26,10 +26,11 @@ html, body, main {
 }
 
 main {
-  width: 1920px;
+  /* width: 1920px;
   height: 1080px;
 
-  background-color: white;
+  background-color: white; */
+  background-color: var(--gray-color-3);
 
   display: flex;
   justify-content: center;
@@ -37,10 +38,8 @@ main {
 }
 
 .container {
-  width: 1440px;
-  height: 960px;
-
-  background-color: var(--gray-color-3);
+  /* width: 1440px;
+  height: 960px; */
 
   display: flex;
   justify-content: center;
