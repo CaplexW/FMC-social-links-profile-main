@@ -12,11 +12,11 @@
   --linkedin-color-2: hsl(198, 97%, 40%);
 
   --font-weight-1: 400;
-  --font-weight-2: 600;
+  --font-weight-2: 550;
   --font-weight-3: 700;
   --font-size: .88rem;
 
-  --image-size: 5rem;
+  --image-size: 6.2rem;
 }
 
 html, body, main {
@@ -26,21 +26,34 @@ html, body, main {
 }
 
 main {
-  background-color: var(--gray-color-3);
+  width: 1920px;
+  height: 1080px;
+
+  background-color: white;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.container {
+  width: 1440px;
+  height: 960px;
+
+  background-color: var(--gray-color-3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .profile-card {
   background-color: var(--gray-color-2);
-  border-radius: .5rem;
+  border-radius: .8rem;
 
-  width: 22rem;
+  width: 27rem;
   
   margin-inline: 1.5rem;
-  padding: 2.3rem 2.3rem 1rem 2.3rem;
+  padding: 2.8rem 2.8rem 1.8rem 2.8rem;
 }
 .user-avatar {
   border-radius: 50%;
@@ -49,14 +62,14 @@ main {
   height: var(--image-size);
 
   margin: auto;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.6rem;
 }
 .user-name {
   color: var(--white-color);
 
   text-align: center;
   font-weight: var(--font-weight-2);
-  font-size: 1.4rem;
+  font-size: 1.75rem;
 
   margin-bottom: .3rem;
 }
@@ -64,47 +77,36 @@ main {
   color: var(--green-color);
 
   text-align: center;
-  font-weight: var(--font-weight-3);
-  font-size: .79rem;
+  font-weight: var(--font-weight-2);
+  font-size: 1rem;
 
-  margin-bottom: 1.35rem;
+  margin-bottom: 1.7rem;
 }
 .user-description {
   color: rgb(207, 207, 207);
 
   text-align: center;
-  font-size: .8rem;
-  font-weight: var(--font-weight-1);
+  font-size: .99rem;
 
-  margin-bottom: 1.35rem;
-}
-.link-container {
-  background: var(--gray-color-1);
-  opacity: 1;
-  transition: all .5s ease-in-out;
-}
-.link-container:hover {
-  opacity: 1;
-  z-index: 0;
-  transition: all .5s ease-in-out;
+  margin-bottom: 1.6rem;
 }
 .user-links button{
   display: block;
 
   border: none;
-  border-radius: .4rem;
+  border-radius: .6rem;
 
   width: 100%;
-  height: 2.5rem;
+  height: 3.2rem;
 
   background: var(--gray-color-1);
 
   color: var(--white-color);
 
-  font-size: .8rem;
-  font-weight: var(--font-weight-3);
+  font-size: 1rem;
+  font-weight: var(--font-weight-2);
 
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 
   /* transition: .5s ease-in-out; */
 }
