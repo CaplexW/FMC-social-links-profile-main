@@ -8,7 +8,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -22,12 +21,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
 - Flexbox
-
-### Continued development
-
-Still trying to make smooth animation of color-in and color-out for gradient colored buttons.
 
 ## Author
 
