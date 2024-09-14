@@ -8,8 +8,10 @@
   --tweeter-color: hsl(203, 84%, 52%);
   --instagram-color-1: hsl(306, 99%, 46%);
   --instagram-color-2: hsl(46, 100%, 48%);
+  --instagram-background: linear-gradient(355deg, var(--instagram-color-1), var(--instagram-color-2));
   --linkedin-color-1: hsl(201, 98%, 35%);
   --linkedin-color-2: hsl(198, 97%, 40%);
+  --linkedin-background: linear-gradient(var(--linkedin-color-1), var(--linkedin-color-2));
 
   --font-weight-1: 400;
   --font-weight-2: 550;
@@ -26,10 +28,6 @@ html, body, main {
 }
 
 main {
-  /* width: 1920px;
-  height: 1080px;
-
-  background-color: white; */
   background-color: var(--gray-color-3);
 
   display: flex;
@@ -38,9 +36,6 @@ main {
 }
 
 .container {
-  /* width: 1440px;
-  height: 960px; */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +84,10 @@ main {
 
   margin-bottom: 1.6rem;
 }
+.gradient-background {
+  border: none;
+  border-radius: .69rem;
+}
 .user-links button{
   display: block;
 
@@ -107,64 +106,39 @@ main {
 
   margin-bottom: 1.1rem;
 
-  /* transition: .5s ease-in-out; */
+  transition: .5s ease-in-out;
 }
 .user-links button:hover {
   cursor: pointer;
 }
-.github-link:hover, .github-link:focus {
+.github-link:hover,
+.github-link:focus {
   background: white;
   color: black;
-
-  /* transition: .5s ease-in-out; */
 }
-.frontend-mentor-link:hover, .frontend-mentor-link:focus {
+.frontend-mentor-link:hover,
+.frontend-mentor-link:focus {
   background: var(--fronted-color);
   color: var(--white-color);
-
-  /* transition: .5s ease-in-out; */
 }
-.linkedin-link:hover, .linkedin-link:focus {
-  background: linear-gradient(var(--linkedin-color-1), var(--linkedin-color-2));
+.linkedin-link:hover,
+.linkedin-link:focus {
+  background: none;
   color: var(--white-color);
-
-  /* transition: .5s ease-in-out; */
 }
-.tweeter-link:hover, .tweeter-link:focus {
+.linkedin-background {
+  background-image: var(--linkedin-background);
+}
+.tweeter-link:hover,
+.tweeter-link:focus {
   background: var(--tweeter-color);
   color: var(--white-color);
-
-  /* transition: .5s ease-in-out; */
 }
-.instagram-link:hover, .instagram-link:focus {
-  background: linear-gradient(var(--instagram-color-1), var(--instagram-color-2));
+.instagram-link:hover,
+.instagram-link:focus {
+  background: none;
   color: var(--white-color);
-  animation: fade-in 2s forwards;
-
-  /* transition: .5s ease-in-out; */
 }
-/* .instagram-link:focus::after {
-  animation: fade-in 2s backwards;
-  opacity: 0;
-  font-size: 3rem;
+.instagram-background {
+  background-image: var(--instagram-background);
 }
-.instagram-link:focus::after {
-  font-size: 5rem;
-} */
-
-/* @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
